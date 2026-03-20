@@ -9,8 +9,9 @@ Some cases are already documented, and more will be added soon!
 ---
 
 ## 🖥 Quick Links
-- [💻 Windows](#windows-troubleshooting-cases-click-to-expand) ![More cases soon](https://img.shields.io/badge/More-cases_coming_soon-blue)
-- [📱 iOS](#ios-troubleshooting-cases-click-to-expand) ![More cases soon](https://img.shields.io/badge/More-cases_coming_soon-green)
+## 🖥 Quick Links
+- [💻 Windows](#windows-troubleshooting-cases-click-to-expand) ![Progress](https://img.shields.io/badge/Completed-3/?-blue)
+- [📱 iOS](#ios-troubleshooting-cases-click-to-expand) ![Progress](https://img.shields.io/badge/Completed-4/?-green)
 
 ---
 
