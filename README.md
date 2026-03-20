@@ -1,6 +1,4 @@
 
-# Troubleshooting Guide
-
 # 🛠 Troubleshooting Guide
 
 > Learning GitHub with ChatGPT! 🚀
@@ -11,8 +9,8 @@ Some cases are already documented, and more will be added soon!
 ---
 
 ## 🖥 Quick Links
-- [💻 Windows](#windows-troubleshooting-cases-click-to-expand)  
-- [📱 iOS](#ios-troubleshooting-cases-click-to-expand)
+- [💻 Windows](#windows-troubleshooting-cases-click-to-expand) ![More cases soon](https://img.shields.io/badge/More-cases_coming_soon-blue)
+- [📱 iOS](#ios-troubleshooting-cases-click-to-expand) ![More cases soon](https://img.shields.io/badge/More-cases_coming_soon-green)
 
 ---
 
