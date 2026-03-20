@@ -1,0 +1,36 @@
+name: Update Progress Badges
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Count Windows cases
+        run: |
+          WINDOWS_COUNT=$(ls windows/*.md 2>/dev/null | wc -l)
+          echo "WINDOWS_COUNT=$WINDOWS_COUNT" >> $GITHUB_ENV
+
+      - name: Count iOS cases
+        run: |
+          IOS_COUNT=$(ls ios/*.md 2>/dev/null | wc -l)
+          echo "IOS_COUNT=$IOS_COUNT" >> $GITHUB_ENV
+
+      - name: Update README.md badges
+        run: |
+          sed -i "s|Completed-[0-9]\+/[0-9]\+-blue|Completed-${WINDOWS_COUNT}/?|g" README.md
+          sed -i "s|Completed-[0-9]\+/[0-9]\+-green|Completed-${IOS_COUNT}/?|g" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update progress badges automatically" || echo "No changes to commit"
+          git push
