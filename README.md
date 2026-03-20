@@ -1,7 +1,9 @@
 
 # 🛠 Troubleshooting Guide
 
-> Learning GitHub with ChatGPT! 🚀
+> Learning GitHub and building a structured IT troubleshooting portfolio with ChatGPT 🚀
+
+
 
 This repository contains IT troubleshooting cases for **Windows** and **iOS** devices.  
 Some cases are already documented, and more will be added soon!  
